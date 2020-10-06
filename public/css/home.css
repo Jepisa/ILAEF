@@ -5,6 +5,78 @@
     -moz-box-sizing: border-box;
 }
 
+
+/* agrego aca lo del navbar que estaba en la pagina de prueba - Franco */
+
+.nav-index{
+    display: flex;
+    flex-direction: column; 
+}
+    .nav-background{
+        background: url('../img/IMAGEN\ 2.jpg');
+        height: 203px;  
+    }
+    .div-logo{
+        width: min-content;    
+    }
+        .logo-ILAEF {
+         
+            min-width: 224px;
+            max-width:284px;
+            max-height:100px;
+            border-radius: 7px;
+            border: 1.7px solid #635e5e61;   
+        }  
+
+    .header-desktop{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        z-index: 10;
+        margin-top: 30px;
+        align-items: flex-start;
+    }
+
+    .div-enlaces{
+        justify-self: flex-end;
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        z-index: 10;
+        margin-top: 30px;
+    }  
+        .div-enlaces a{
+
+            text-align: center;
+            font-weight: bold;
+            letter-spacing: -0.5px;
+            font-size: 12px;
+            color: #817f7f;
+            text-decoration: none;
+            border: 1.7px solid #635e5e61;
+            border-radius: 7px;
+            padding: 10px 5px;
+            background-color: white;
+
+            margin: 0 3px;
+            min-width: 11vw;
+            max-height: 100px;
+
+        }
+        .a-home{
+            min-width: 60px !important; 
+            width: 15px; 
+            padding: 0 9px !important ;
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+        }   
+
+.header-mobile{
+    display: none;
+}
+
+
 /* div superior y navbar */
 #div-fondo-superior{
     background-image: url('../img/circulos.jpg');
@@ -31,4 +103,68 @@
 
 .img-logo-medio{
     width: 100%;
+}
+
+
+@media screen and (max-width:700px){
+
+    .header-desktop{
+        display: none;
+    }
+    .header-mobile{
+        display: flex;
+
+        justify-content: space-between;
+
+        z-index: 10;
+
+        align-items: center;
+
+        width: 100vw;
+        height: 65px;
+        background-color: white;
+
+    }
+    .logo-ILAEF-mobile {
+        height: 13vw;
+        padding: 8px; 
+       
+    }
+    .menu_items{
+        position: fixed;
+        width:100vw;
+        height: calc(100%-65px);
+        top: -100vh;
+        text-align: center;
+        flex-direction: column;
+        display: flex;
+        list-style: none;
+        transition: all .4s;
+    }
+    .menu_items li{
+        margin: 30px 0 0 0;
+        line-height: 30px;
+
+    }
+
+    .menu_items li a{
+        text-decoration: none;
+        font-size: 20px;
+
+    }
+    ul.show{
+        top: 65px;
+    }
+    .menu_mobile_logo{
+        width: 13vw;
+        height: 10vw;
+        margin-right: 30px;
+    }
+
+    .carousel{
+        display: none;
+    }
+    #img-logo-medio{
+        display: none;
+    }
 }
