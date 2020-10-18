@@ -9,7 +9,7 @@
 @endsection
 
 @section('content')
-
+'news'
 <div id="div-fondo-superior">
     <nav id="navbar">
         <div>
@@ -50,60 +50,41 @@
 
 {{-- Paises en los globos (Parte Media) --}}
 <div id="div-fondo-medio">
-    <img id="img-logo-medio" src="{{ asset('img/circulos 2.jpg') }}" alt="logo-ILAEF">
-    <div>
-        <a href="">
-            <img src="" alt="" class="paises">
-            <span class="nombre-pais"></span>
-        </a>
+    <img class="fondo-medio" src="{{ asset('img/circulos 2.jpg') }}" alt="logo-ILAEF">
+    <div class="div-logo-medio">
+        <img class="logo-medio" src="{{ asset('img/logo-ilaef.jpg') }}" alt="">
     </div>
-    <div>
-        <a href="">
-            <img src="" alt="" class="paises">
-            <span class="nombre-pais"></span>
-        </a>
+    <div class="paises">
+        <div class="pais">
+            <a href="">
+                <img src="{{ asset('img/globo.png') }}" alt="" class="img-pais">
+                <span class="nombre-pais">Argentina</span>
+            </a>
+        </div><div class="pais">
+            <a href="">
+                <img src="{{ asset('img/globo.png') }}" alt="" class="img-pais">
+                <span class="nombre-pais">Argentina</span>
+            </a>
+        </div><div class="pais">
+            <a href="">
+                <img src="{{ asset('img/globo.png') }}" alt="" class="img-pais">
+                <span class="nombre-pais">Argentina</span>
+            </a>
+        </div><div class="pais">
+            <a href="">
+                <img src="{{ asset('img/globo.png') }}" alt="" class="img-pais">
+                <span class="nombre-pais">Argentina</span>
+            </a>
+        </div>
     </div>
-    <div>
-        <a href="">
-            <img src="" alt="" class="paises">
-            <span class="nombre-pais"></span>
-        </a>
-    </div>
-    <div>
-        <a href="">
-            <img src="" alt="" class="paises">
-            <span class="nombre-pais"></span>
-        </a>
-    </div>
-    <div>
-        <a href="">
-            <img src="" alt="" class="paises">
-            <span class="nombre-pais"></span>
-        </a>
-    </div>
-    <div>
-        <a href="">
-            <img src="" alt="" class="paises">
-            <span class="nombre-pais"></span>
-        </a>
-    </div>
-    <div>
-        <a href="">
-            <img src="" alt="" class="paises">
-            <span class="nombre-pais"></span>
-        </a>
-    </div>
-    <div>
-        <a href="">
-            <img src="" alt="" class="paises">
-            <span class="nombre-pais"></span>
-        </a>
+
+    <div class="paises">
+
     </div>
 </div>
 
 {{-- Novedades de los Capitulos --}}
 <div id="novedades">
-
 </div>
 
 {{-- Footer --}}
