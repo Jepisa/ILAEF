@@ -2,28 +2,60 @@
 
 namespace Tests\Feature;
 
+use App\Models\Country;
+use App\Models\News;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 
 class HomeTest extends TestCase
 {
-    /**
-     * A basic feature test example.
-     *
-     * @return void
-     */
-    public function testExample()
+    use RefreshDatabase;
+
+    /** @test*/
+    public function principal_route_is_ok()
+    {
+        $this->get('/')->assertStatus(200);
+    }
+
+    /** @test*/
+    public function principal_route_redirects_to_view_home()
     {
         $response = $this->get('/');
 
-        $response->assertStatus(200);
+        $response->assertViewIs('home');
     }
 
-//     public function viewHasEvents()
-//     {
-//         $response = $this->get('/');
+    /** @test*/
+    public function view_home_receives_only_the_last_eight_news()
+    {
+        $this->withoutExceptionHandling();
 
-//         $response->assertStatus(200); // Acá seguir y poner que en la vista home (vista principal) se esté recibiendo una variable con los eventos más recientes
-//     }
+        Country::factory()->create();
+
+        News::factory()->count(10)->create();
+
+
+        $news = News::orderByDesc('created_at')->take(8)->get();
+
+
+        $response = $this->get('/');
+
+        $response->assertViewHas('news', $news);
+
+    }
+    /** @test */
+    public function if_there_is_not_one_news_or_more_in_bd_the_principal_route_redirects_to_view_home_without_variable_news()
+    {
+        $this->withoutExceptionHandling();
+
+
+        $lolo = News::orderByDesc('created_at')->take(1)->get();
+
+        $response = $this->get('/');
+
+        $response->assertViewMissing('news');// We need to see if this test is ok, maybe we can change it
+
+    }
+
 }
