@@ -13,12 +13,12 @@ class ActivityController extends Controller
      */
     public function index()
     {
-        return view('activities');
+        return view('activities.index');
     }
 
     public function create()
     {
-        return view('activityCreate');
+        return view('activities.create');
     }
 
 
@@ -26,14 +26,14 @@ class ActivityController extends Controller
     {
 
 
-        return view('activityCreate');
+        return view('activitiescreate');
     }
 
 
     public function show($activity)
     {
         // Trata de que se busque por el slug y no por el nombre. Vijate el la base de datos como están estructurados las tablas en migration
-        return view('showActivity', compact('activity'));
+        return view('activities.show', compact('activity'));
 
 
     }
@@ -41,7 +41,7 @@ class ActivityController extends Controller
 
     public function edit($id)
     {
-        return view('editActivity', compact('activity'));
+        return view('activities.edit', compact('activity'));
     }
 
     /**
@@ -51,7 +51,7 @@ class ActivityController extends Controller
      */
     public function update(Request $request, $id)
     {
-        return view('activities');// maybe return with a message that says 'the activity was created successfully'. Obviously in spanish
+        return view('activities.index');// maybe return with a message that says 'the activity was created successfully'. Obviously in spanish
     }
 
     /**
@@ -60,6 +60,6 @@ class ActivityController extends Controller
      */
     public function destroy($id)
     {
-        return view('activities'); // the same message as above, but the opposite: 'the activity was deleted successfully'.
+        return view('activities.index'); // the same message as above, but the opposite: 'the activity was deleted successfully'.
     }
 }
