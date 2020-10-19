@@ -6,26 +6,27 @@ use App\Http\Controllers\NewsController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Artisan;
 
-Route::get('/', HomeController::class);
+Route::get('/', HomeController::class)->name('home');
 
 //Static views
-Route::view('quienes-somos', 'aboutUs');
-Route::view('nuestra-mision', 'ourMission');
+Route::view('quienes-somos', 'aboutUs')->name('quienes-somos');
+Route::view('nuestra-mision', 'ourMission')->name('nuestra-mision');
 
 //News
-Route::get('/noticias/crear', [NewsController::class, 'create'] );
-Route::post('/noticias/crear', [NewsController::class, 'store'] );
-Route::get('/noticias/{id}', [NewsController::class, 'show'] );
-Route::get('/noticias/Editar/{id}', [NewsController::class, 'edit'] );
-Route::put('/noticias/Editar', [NewsController::class, 'update'] );
+Route::get('/noticias/crear', [NewsController::class, 'create'] )->name('news.create');
+Route::post('/noticias/crear', [NewsController::class, 'store'] )->name('news.store');
+Route::get('/noticias/{id}', [NewsController::class, 'show'] )->name('news.show');
+Route::get('/noticias/{id}/editar', [NewsController::class, 'edit'] )->name('news.edit');
+Route::put('/noticias/editar', [NewsController::class, 'update'] )->name('news.update');
+
 
 //Activities
-Route::get('/actividades', [ActivityController::class, 'index'] );
-Route::get('/actividades/crear', [ActivityController::class, 'create'] );
-Route::post('/actividades/crear', [ActivityController::class, 'store'] );
-Route::get('/actividades/{activity}', [ActivityController::class, 'show'] );
-Route::get('/actividades/Editar/{id}', [ActivityController::class, 'edit'] );
-Route::put('/actividadesEditar', [ActivityController::class, 'update'] );
+Route::get('/actividades', [ActivityController::class, 'index'] )->name('activities.index');
+Route::get('/actividades/crear', [ActivityController::class, 'create'] )->name('activities.create');
+Route::post('/actividades', [ActivityController::class, 'store'] )->name('activities.store');
+Route::get('/actividades/{activity}', [ActivityController::class, 'show'] )->name('activities.show');
+Route::get('/actividades/{activities/editar', [ActivityController::class, 'edit'] )->name('activities.edit');
+Route::put('/actividades/{activities}', [ActivityController::class, 'update'] )->name('activities.update');
 
 
 
