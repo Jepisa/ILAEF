@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 class AddRoleIdToUsers extends Migration
 {
+    public $defaultRole = false; //Contribullente (ver si se sigue esa convención)
     /**
      * Run the migrations.
      *
@@ -13,8 +14,9 @@ class AddRoleIdToUsers extends Migration
      */
     public function up()
     {
+
         Schema::table('users', function (Blueprint $table) {
-            $table->foreignId('role_id')->constrained();
+            $table->foreignId('role_id')->default($this->defaultRole)->constrained('roles','id');
         });
     }
 
