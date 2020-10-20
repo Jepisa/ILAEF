@@ -9,12 +9,7 @@ class State extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name',];
-
-    public function categories()
-    {
-        return $this->belongsToMany('App\Models\Tag');
-    }
+    protected $fillable = ['name'];
 
     public function activities()
     {

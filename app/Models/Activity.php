@@ -9,7 +9,7 @@ class Activity extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['title','body','image'];
+    protected $fillable = ['title', 'slug', 'body','image'];
 
     public function categories()
     {

@@ -17,4 +17,20 @@ class News extends Model
         ];
 
     use HasFactory;
+
+    public static function untilLastEightNews()
+    {
+        return $news = News::orderBy('created_at', 'desc')->limit(8)->get();
+
+    }
+
+    public function country()
+    {
+        return $this->belongsTo('App\Models\Country');
+    }
+
+    public function state()
+    {
+        return $this->belongsTo('App\Models\State');
+    }
 }
