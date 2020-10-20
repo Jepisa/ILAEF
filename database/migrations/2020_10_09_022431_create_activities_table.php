@@ -19,6 +19,7 @@ class CreateActivitiesTable extends Migration
             $table->text('slug');
             $table->text('body');
             $table->text('image');
+            $table->foreignId('state_id')->constrained();
             $table->timestamps();
         });
     }
