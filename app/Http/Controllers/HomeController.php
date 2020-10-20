@@ -8,10 +8,11 @@ class HomeController extends Controller
 {
     public function __invoke()
     {
-        $news = News::orderBy('created_at', 'desc')->limit(8)->get();
 
-        if ($news->count() > 0) {
-            return view('home', compact('news'));
+        $untilLastEightNews = News::untilLastEightNews();
+
+        if ( $untilLastEightNews->count() >= 1 ){
+            return view('home', ['news' => $untilLastEightNews]);
         } else {
             return view('home');
         }
