@@ -15,12 +15,17 @@ class HomeTest extends TestCase
     /** @test*/
     public function principal_route_is_ok()
     {
+        $this->withoutExceptionHandling();
+
         $this->get('/')->assertStatus(200);
     }
 
     /** @test*/
     public function principal_route_redirects_to_view_home()
     {
+        $this->withoutExceptionHandling();
+
+
         $response = $this->get('/');
 
         $response->assertViewIs('home');
@@ -45,12 +50,9 @@ class HomeTest extends TestCase
 
     }
     /** @test */
-    public function if_there_is_not_one_news_or_more_in_bd_the_principal_route_redirects_to_view_home_without_variable_news()
+    public function if_there_is_not_news_in_bd_the_principal_route_redirects_to_view_home_without_variable_news()
     {
         $this->withoutExceptionHandling();
-
-
-        $lolo = News::orderByDesc('created_at')->take(1)->get();
 
         $response = $this->get('/');
 
