@@ -2,19 +2,20 @@
 
 namespace Database\Factories;
 
-use App\Models\Country;
+use App\Models\Entity;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 
-class CountryFactory extends Factory
+class EntityFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = Country::class;
+    protected $model = Entity::class;
 
+    public $entities = ['Argentina', 'Colombia', 'Paraguay', 'Ecuador', 'El Salvador', 'Estados Unidos', 'Honduras', 'Mexico', 'Panamá'];
     /**
      * Define the model's default state.
      *
@@ -22,8 +23,9 @@ class CountryFactory extends Factory
      */
     public function definition()
     {
+
         return [
-            'name' => $this->faker->country(),
+            'name' => shuffle($this->entities)
         ];
     }
 }

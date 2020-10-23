@@ -17,8 +17,9 @@ class CreateActivitiesTable extends Migration
             $table->id();
             $table->string('title');
             $table->text('slug');
+            $table->text('lead'); //Lead is an introductory paragraph
             $table->text('body');
-            $table->text('image');
+            $table->text('image_path');
             $table->foreignId('state_id')->constrained();
             $table->timestamps();
         });

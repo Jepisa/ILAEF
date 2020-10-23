@@ -19,8 +19,7 @@ class CreateNewsTable extends Migration
             $table->text('image');//Esto estará como la url de donde estará la imagen de la news. Tenemos que ver si al final superará los 255 caracteres porque, si no, tenemos que cambiarlo a text()
             $table->string('description'); // Igual que los demás, ver la longitud de la description para que no se desborde
             $table->text('url'); // text te permite un poco mása de 60mil caracteres así que esto estará bien. Si se ve que necesitamos más podemos cambiarlo a longText, que según lo que encontré, permite como 4millones de catacteres (como máximo)
-            $table->foreignId('country_id')->constrained(); // Hay que poner otro nombre porque no solo abarca a los capitulos (paises), si no, también a 'ILAEF' y 'LATAM'
-            $table->foreignId('state_id')->nullable()->constrained(); // Es una clave foránea para saber su estado. Ejemplo: si estará visible, oculto, etc. Si no se le pasa nada, por default será null
+            $table->foreignId('entity_id')->constrained(); // Hay que poner otro nombre porque no solo abarca a los capitulos (paises), si no, también a 'ILAEF' y 'LATAM'
             $table->timestamps();
         });
     }

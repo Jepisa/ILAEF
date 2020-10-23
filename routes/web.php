@@ -37,3 +37,7 @@ Route::put('/actividades/{activities}', [ActivityController::class, 'update'] )-
 Route::get('Storage:link', function () {
     Artisan::call('storage:link');
 });
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');

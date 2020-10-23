@@ -20,17 +20,12 @@ class News extends Model
 
     public static function untilLastEightNews()
     {
-        return $news = News::orderBy('created_at', 'desc')->limit(8)->get();
+        return $news = News::orderBy('created_at', 'desc')->limit(8)->get();//if you want, you can change this
 
     }
 
-    public function country()
+    public function entity()
     {
         return $this->belongsTo('App\Models\Country');
-    }
-
-    public function state()
-    {
-        return $this->belongsTo('App\Models\State');
     }
 }
