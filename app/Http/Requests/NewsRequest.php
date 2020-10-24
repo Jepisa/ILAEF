@@ -17,9 +17,8 @@ class NewsRequest extends FormRequest
             'title' => 'required|max:255',
             'description' => 'required|max:255',
             'url' => 'required|url',
-            'country_id' => 'required|exists:countries,id',
+            'entity_id' => 'required|exists:entities,id',
             'image' => 'required|image', //|mimes:jpeg,png,jpg|dimensions:min_width=100,min_height=200 puedo ponerlo con medida estricta si le saco el min_
-            'state_id' => 'required|exists:states,id',
         ];
     }
 }
