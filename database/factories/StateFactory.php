@@ -22,7 +22,7 @@ class StateFactory extends Factory
     public function definition()
     {
         return [
-            'name'=>$this->faker->boolean,
+            'name'=> 'Visible',
         ];
     }
 }
