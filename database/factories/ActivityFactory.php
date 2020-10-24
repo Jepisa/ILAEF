@@ -23,6 +23,7 @@ class ActivityFactory extends Factory
     {
         return [
             'title' => $this->faker->name,
+            'lead' => $this->faker->text(200),
             'image' =>  $this->faker->imageUrl(),
             'slug' => $this->faker->text($maxNbChars = 100),
             'body' => $this->faker->text($maxNbChars = 100),
