@@ -2,7 +2,7 @@
 
 namespace Tests\Feature;
 
-use App\Models\Country;
+use App\Models\Entity;
 use App\Models\News;
 use App\Models\Role;
 use App\Models\State;
@@ -38,7 +38,6 @@ class NewsTest extends TestCase
     /** @test */
     public function the_route_noticias_crear_redirects_to_news_create_view()
     {
-        $this->withoutExceptionHandling();
 
         $users = $this->users();
 
@@ -52,17 +51,17 @@ class NewsTest extends TestCase
     /** @test */
     public function image_has_been_successfully_stored()
     {
-        $this->withoutExceptionHandling();
+        $this->withExceptionHandling();
 
         $newNews = $this->newNews();
         $users = $this->users();
 
         $this->actingAs($users['administradorPrincipal'])
-            ->withSession(['header' => 'bar']) //La parte de session no sé si lo utilizaré
-            ->post('/noticias/crear', $newNews);
+                ->withSession(['header' => 'bar']) //La parte de session no sé si lo utilizaré
+                ->post('/noticias/crear', $newNews);
 
 
-        $News = News::where('title', $newNews['title'])->first();
+        $News = News::where('title', $newNews['title'])->firstOrfail();
 
         $pathOfNews = $News->image;
 
@@ -86,7 +85,7 @@ class NewsTest extends TestCase
     /** @test */
     public function a_news_has_been_successfully_created_in_bd()
     {
-        $this->withoutExceptionHandling();
+
 
         $newNews = $this->newNews();
 
@@ -102,8 +101,7 @@ class NewsTest extends TestCase
             'title' => $newNews['title'],
             'description' => $newNews['description'],
             'url' => $newNews['url'],
-            'country_id' => $newNews['country_id'],
-            'state_id' => $newNews['state_id'],
+            'entity_id' => $newNews['entity_id'],
         ]);
 
     }
@@ -117,8 +115,8 @@ class NewsTest extends TestCase
 
 
         $response = $this->actingAs($users['administradorPrincipal'])
-            ->withSession(['header' => 'bar']) //La parte de session no sé si lo utilizaré
-            ->post('/noticias/crear', $newNews);
+                            ->withSession(['header' => 'bar']) //La parte de session no sé si lo utilizaré
+                            ->post('/noticias/crear', $newNews);
 
         $response->assertViewIs('welcome');
     }
@@ -174,19 +172,18 @@ class NewsTest extends TestCase
     //Crea un array con todos los datos necesario(Un Country, Una Imagen) de una news
     private function newNews()
     {
-        $country = Country::factory()->create([ 'name' => 'Argentina' ]);
+        $entity = Entity::factory()->create([ 'name' => 'Argentina' ]);
         $file = $this->fakeImage();
         $state = State::create([ 'name' => 'visible' ]);
 
-        $newNews = [
+        return $newNews = [
             'title' => 'My first news',
             'description' => 'A litter description',
             'url' => 'https://iadef.org/',
-            'country_id' => $country->id,
+            'entity_id' => $entity->id,
             'image' => $file,
-            'state_id' => $state->id, //this part is to say if the news is visible or not (it cans has more options)
         ];
 
-        return $newNews;
+
     }
 }

@@ -2,7 +2,7 @@
 
 namespace Tests\Feature;
 
-use App\Models\Country;
+use App\Models\Entity;
 use App\Models\News;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
@@ -36,7 +36,7 @@ class HomeTest extends TestCase
     {
         $this->withoutExceptionHandling();
 
-        Country::factory()->create();
+        Entity::factory()->create();
 
         News::factory()->count(10)->create();
 
