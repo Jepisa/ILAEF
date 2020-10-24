@@ -11,7 +11,7 @@ class NewsController extends Controller
 {
     public function index()
     {
-        return view('news');
+        return view('news.index');
     }
 
     public function create()
@@ -37,7 +37,7 @@ class NewsController extends Controller
             ]);
         }
 
-        return view('home');
+        return view('welcome');
 
         //$path = Storage::disk('local')->putFileAs('news', $image, $newName); //url donde se guardo
     }
@@ -68,7 +68,7 @@ class NewsController extends Controller
 
     //Storage::move('old/file.jpg', 'new/file.jpg');
 
-        return view('home');// maybe return with a message that says 'the activity was created successfully'. Obviously in spanish
+        return view('welcome');// maybe return with a message that says 'the activity was created successfully'. Obviously in spanish
     }
 
     /**
@@ -79,6 +79,6 @@ class NewsController extends Controller
     {
         Storage::disk('local')->delete('folder_path/file_name.jpg');
 
-        return view('home'); // the same message as above, but the opposite: 'the activity was deleted successfully'.
+        return view('welcome'); // the same message as above, but the opposite: 'the activity was deleted successfully'.
     }
 }

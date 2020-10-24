@@ -13,6 +13,7 @@ class ActivitiesTest extends TestCase
 {
     use RefreshDatabase;
 
+    use RefreshDatabase;
 
     /** @test */
     public function the_route_actividades_is_ok()
@@ -21,7 +22,20 @@ class ActivitiesTest extends TestCase
 
         $response = $this->get('/actividades');
         $response->assertStatus(200);
-        
+
+    }
+
+    /** @test */
+    public function view_activities_receives_only_the_last_eight_activities()
+    {
+        $this->withoutExceptionHandling();
+
+        Activity::factory()->count(10)->create();
+
+        $activities = Activity::orderByDesc('created_at')->take(8)->get();
+
+
+        $response->assertViewHas('activities', $activities);
     }
     /** @test*/
     public function testview_activities_receives_only_the_last_eight_news()

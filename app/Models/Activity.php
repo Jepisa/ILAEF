@@ -13,7 +13,7 @@ class Activity extends Model
 
     public function categories()
     {
-        return $this->belongsToMany('App\Models\Category');
+        return $this->belongsToMany('App\Models\Entity');
     }
 
     public function tags()

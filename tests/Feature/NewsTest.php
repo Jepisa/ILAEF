@@ -17,6 +17,7 @@ use Tests\TestCase;
 
 class NewsTest extends TestCase
 {
+    use WithFaker;
     use RefreshDatabase;
 
     /** @test */
@@ -28,7 +29,7 @@ class NewsTest extends TestCase
 
 
         $response = $this->actingAs($users['administradorPrincipal'])
-            ->withSession(['foo' => 'bar']) //La parte de session no sé si lo utilizaré
+            ->withSession(['header' => 'bar']) //La parte de session no sé si lo utilizaré
             ->get('/noticias/crear');
 
         $response->assertOk();
@@ -41,9 +42,9 @@ class NewsTest extends TestCase
 
         $users = $this->users();
 
-        $response = $this->actingAs($users['administradorPrincipal'])
-            ->withSession(['foo' => 'bar']) //La parte de session no sé si lo utilizaré
-            ->get('/noticias/crear');
+        $response = $this   ->actingAs($users['administradorPrincipal'])
+                            ->withSession(['header' => 'bar']) //La parte de session no sé si lo utilizaré
+                            ->get('/noticias/crear');
         $response->assertViewIs('news.create');
     }
 
@@ -57,7 +58,7 @@ class NewsTest extends TestCase
         $users = $this->users();
 
         $this->actingAs($users['administradorPrincipal'])
-            ->withSession(['foo' => 'bar']) //La parte de session no sé si lo utilizaré
+            ->withSession(['header' => 'bar']) //La parte de session no sé si lo utilizaré
             ->post('/noticias/crear', $newNews);
 
 
@@ -92,7 +93,7 @@ class NewsTest extends TestCase
         $users = $this->users();
 
         $this->actingAs($users['administradorPrincipal'])
-            ->withSession(['foo' => 'bar']) //La parte de session no sé si lo utilizaré
+            ->withSession(['header' => 'bar']) //La parte de session no sé si lo utilizaré
             ->post('/noticias/crear', $newNews);
 
 
@@ -116,10 +117,10 @@ class NewsTest extends TestCase
 
 
         $response = $this->actingAs($users['administradorPrincipal'])
-            ->withSession(['foo' => 'bar']) //La parte de session no sé si lo utilizaré
+            ->withSession(['header' => 'bar']) //La parte de session no sé si lo utilizaré
             ->post('/noticias/crear', $newNews);
 
-        $response->assertViewIs('home');
+        $response->assertViewIs('welcome');
     }
 
 
