@@ -11,9 +11,9 @@ class ActivityController extends Controller
 
     public function index()
     {
-        $activities = Activity::orderByDesc('created_at')->take(8)->get();
-        $vac = compact("activities");
-        return view('activities.index',$vac);
+        $activities = Activity::orderByDesc('created_at')->take(4)->get();
+
+        return view('activities.index', compact("activities"));
     }
 
     public function create()
