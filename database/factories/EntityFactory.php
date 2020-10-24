@@ -15,7 +15,6 @@ class EntityFactory extends Factory
      */
     protected $model = Entity::class;
 
-    public $entities = ['Argentina', 'Colombia', 'Paraguay', 'Ecuador', 'El Salvador', 'Estados Unidos', 'Honduras', 'Mexico', 'Panamá'];
     /**
      * Define the model's default state.
      *
@@ -25,7 +24,7 @@ class EntityFactory extends Factory
     {
 
         return [
-            'name' => shuffle($this->entities)
+            'name' => $this->faker->country
         ];
     }
 }
