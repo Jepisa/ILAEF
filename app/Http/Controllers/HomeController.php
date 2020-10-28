@@ -12,9 +12,9 @@ class HomeController extends Controller
         $untilLastEightNews = News::untilLastEightNews();
 
         if ( $untilLastEightNews->count() >= 1 ){
-            return view('welcome', ['news' => $untilLastEightNews]);
+            return view('home', ['news' => $untilLastEightNews]);
         } else {
-            return view('welcome');
+            return view('home');
         }
     }
 }

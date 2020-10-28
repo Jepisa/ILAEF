@@ -9,9 +9,21 @@
 
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+        
+
+        <link href="{{ asset(mix('css/app.css')) }}" rel="stylesheet">
+        <script src="{{ asset(mix('js/app.js')) }}"></script>
+
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+
+        <!-- Particlesjs -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js">
+
+        <!-- Animate -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+        
 
         @livewireStyles
 
@@ -20,23 +32,32 @@
     </head>
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100">
-            @livewire('navigation-dropdown')
-
-            <!-- Page Heading -->
-            <header class="bg-white shadow">
-                <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                    {{ $header }}
-                </div>
-            </header>
-
             <!-- Page Content -->
+            <x-navbar/>
             <main>
                 {{ $slot }}
             </main>
+            <!-- Page Content -->
+            <x-footer/>
         </div>
 
         @stack('modals')
 
         @livewireScripts
+        <!-- <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script>
+           particlesJS();
+        </script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+        <script src=" https://unpkg.com/aos@next/dist/aos.js"></script> 
+        <script>
+            window.onload= function() {
+                Particles.init({
+                    selector: '.background',
+                    connectParticles: true,
+                });
+            };
+            AOS.init(); 
+        </script>
     </body>
 </html>
