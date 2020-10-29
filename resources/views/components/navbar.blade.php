@@ -1,4 +1,4 @@
-<style type="text/css">
+<style>
     .divNav{
         width: 100%;
         display: flex;

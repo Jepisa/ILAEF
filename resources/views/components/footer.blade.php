@@ -48,7 +48,7 @@
     }
     .desarrollado{
         height: 30px;
-        background: #bdbfc0;
+        background: #e4e4e4;
         display: flex;
         justify-content: center;
         align-items: center;
