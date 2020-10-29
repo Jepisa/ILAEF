@@ -82,5 +82,41 @@
              </div>
         </div>
         <!-- CARD -->
+        <div class="col-12 col-md-6 col-lg-4" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="50">
+            <div class="cardNew">
+                <div class="imgNew">
+                    <div class="tagPais">Argentina</div>
+                    <img src="{{asset('/img/ILAEF_grupal1.jpg')}}" alt="">
+                </div>
+                <div class="body">
+                    <div class="title">
+                        Lorem ipsum dolor, sit amet 
+                    </div>
+                    <div class="description">
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis,  excepturi quidem veniam exercitationem corrupti bexcepturi quidem veniam exercitationem corrupti b 
+                        </p>
+                    </div>
+                </div>
+             </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="50">
+            <div class="cardNew">
+                <div class="imgNew">
+                    <div class="tagPais">Argentina</div>
+                    <img src="{{asset('/img/ILAEF_grupal1.jpg')}}" alt="">
+                </div>
+                <div class="body">
+                    <div class="title">
+                        Lorem ipsum dolor, sit amet 
+                    </div>
+                    <div class="description">
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis,  excepturi quidem veniam exercitationem corrupti bexcepturi quidem veniam exercitationem corrupti b 
+                        </p>
+                    </div>
+                </div>
+             </div>
+        </div>
     </div>
 </div>
