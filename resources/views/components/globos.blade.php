@@ -8,21 +8,23 @@
     .globo{
         height: 90px;
         width: 95px;
-        background-color:#f1d35d;
-        color: #636363;       
+        /* background-color:#f1d35d;
+        color: #636363;  */
+        background-color: #e5313f;
+        color: #ffffff;  
         border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
-        box-shadow: 0px 15px 25px -4px rgba(30, 30, 60, 0.12);
         /* font-family: 'Roboto', sans-serif; */
         font-size: 14px;
         font-weight: 700;
         transition: all 0.2s ease-out;
         cursor: pointer;
+        box-shadow: 0px 15px 25px -4px rgba(30, 30, 60, 0.12);
     }
     .globo:hover{
-        background-color:#f8d95e;
+        background-color:#fb6d78;
     }
 
     .logoBlobo{

@@ -53,8 +53,10 @@
         <script>
             window.onload= function() {
                 Particles.init({
-                    selector: '.background',
+                    selector: '.conection',
                     connectParticles: true,
+                    maxParticles: 110,
+                    minDistance: 150,
                 });
             };
             AOS.init(); 

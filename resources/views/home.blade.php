@@ -1,9 +1,9 @@
 <style>
-  .background {
+  .conection {
     display:none;
   }
   @media (min-width: 768px) {
-    .background{
+    .conection{
       position:absolute;
       display:block;
       top: 0;
@@ -15,7 +15,7 @@
   }
 </style>
 <x-app-layout>
-  <canvas class="background"></canvas>
+  <canvas class="conection"></canvas>
   <x-carrousel/>
   <x-globos/>
   <x-card/>
