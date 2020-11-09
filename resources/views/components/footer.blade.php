@@ -28,6 +28,7 @@
         border-radius: 50%;
         box-shadow: 0px 15px 25px -4px rgba(30, 30, 60, 0.12);
     }
+
     .redes ul{
         padding:0;
         display: flex;
@@ -70,6 +71,10 @@
         }
         .redes img{
             width: 50px;
+            transition: all 0.2s;
+        }
+        .redes img:hover{
+            background-color: rgba(66, 66, 66, 0.678);
         }
     }
 </style>

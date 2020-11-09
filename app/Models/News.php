@@ -9,11 +9,11 @@ class News extends Model
 {
     protected $fillable = [
         'title',
-        'description',
-        'url',
-        'country_id',
         'image',
-        'state_id',
+        'description',
+        'body',
+        'url',
+        'entity_id',
         ];
 
     use HasFactory;

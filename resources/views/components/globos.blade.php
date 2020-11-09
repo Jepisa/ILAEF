@@ -5,6 +5,7 @@
         justify-content: center;
         align-items: center;
         position: relative;
+        margin-bottom: 40px;
     }
     .engranaje{
         width: 90px;
@@ -50,6 +51,9 @@
     @media (min-width: 990px) {
         .divEngranaje{
             margin-bottom: 15px;
+        }
+        div.divEngranaje{
+            margin-bottom: 50px;
         }
         .engranaje{
             width: 110px;

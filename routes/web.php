@@ -30,6 +30,11 @@ Route::put('/actividades/{activities}', [ActivityController::class, 'update'] )-
 
 
 
+//Admin
+Route::view('/admin' , 'admin');
+
+
+
 
 // Delete the routes test
 

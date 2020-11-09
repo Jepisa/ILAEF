@@ -132,7 +132,9 @@
     <div class="navbar" id="navbar">
         <div class="logos">
             <div class="logoNavBar">
-                <img src="{{asset('/img/logo.png')}}" alt="">
+                <a href="/">
+                    <img src="{{asset('/img/logo.png')}}" alt="">
+                </a>
             </div>
             <div class="logoMenu" id="menu">
                 <img src="{{asset('/icons/menu.png')}}" alt="">
@@ -141,10 +143,10 @@
         <div class="collapse" id="collapse">
             <ul>
                 <li>
-                    <a href="">Home</a>
+                    <a href="/">Home</a>
                 </li>
                 <li>
-                    <a href="">Quienes Somos</a>
+                    <a href="quienes-somos">Quienes Somos</a>
                 </li>
                 <li>
                     <a href="">Nuestra Mision</a>
