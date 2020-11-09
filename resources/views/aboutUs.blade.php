@@ -3,11 +3,11 @@
 <canvas class="conection"></canvas>
 <div class="aboutUsContent container col-12 col-md-11">
     <div class="row">
-        <div class="col-12 col-lg-8">
+        <div class="col-12 col-lg-9">
             <div class="tagAboutUs">
                 Quienes somos
             </div>
-            <div>
+            <div class="about">
                 <p>
                     El Instituto Latinoamericano de la Empresa Familiar es una Asociación Civil formada por institutos de la empresa familiar o entidades similares, con personalidad jurídica diferenciada,  creados (o a crearse) en cada uno de los países de Latinoamérica.
                 </p>
@@ -36,22 +36,22 @@
                 </ul>
             </div>
         </div>
-        <div class="logosAsoc col-lg-4">
+        <div class="logosAsoc col-lg-3">
             <ul>
                 <li>
-                    <img src="{{asset('/img/logo-ilaef.jpg')}}" alt="" srcset="">
+                    <img src="{{asset('/img/logo0.png')}}" alt="" srcset="">
                 </li>
                 <li>
-                    <img src="{{asset('/img/logo-ilaef.jpg')}}" alt="" srcset="">
+                    <img src="{{asset('/img/logo1.jpg')}}" alt="" srcset="">
                 </li>
                 <li>
-                    <img src="{{asset('/img/logo-ilaef.jpg')}}" alt="" srcset="">
+                    <img src="{{asset('/img/logo2.png')}}" alt="" srcset="">
                 </li>
                 <li>
-                    <img src="{{asset('/img/logo-ilaef.jpg')}}" alt="" srcset="">
+                    <img src="{{asset('/img/logo3.png')}}" alt="" srcset="">
                 </li>
                 <li>
-                    <img src="{{asset('/img/logo-ilaef.jpg')}}" alt="" srcset="">
+                    <img src="{{asset('/img/logo4.png')}}" alt="" srcset="">
                 </li>
             </ul>
         </div>

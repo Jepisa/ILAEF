@@ -15,25 +15,13 @@
         <div id="carousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner rounded">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="{{asset('/img/cueros2.jpg')}}" alt="First slide">
-                    <div class="carousel-caption">
-                        <h2>Lorem ipsum dolor sit amet.</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, vel.</p>
-                    </div>
+                    <img class="d-block w-100" src="{{asset('/img/cueros.jpg')}}" alt="First slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="{{asset('/img/fabrica2.jpg')}}" alt="Second slide">
-                    <div class="carousel-caption">
-                        <h2>Lorem ipsum dolor sit amet.</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, vel.</p>
-                    </div>
+                    <img class="d-block w-100" src="{{asset('/img/fabrica.jpg')}}" alt="Second slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="{{asset('/img/soldando2.jpg')}}" alt="Third slide">
-                    <div class="carousel-caption">
-                        <h2>Lorem ipsum dolor sit amet.</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, vel.</p>
-                    </div>
+                    <img class="d-block w-100" src="{{asset('/img/soldando.jpg')}}" alt="Third slide">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
