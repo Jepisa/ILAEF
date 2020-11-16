@@ -1,8 +1,7 @@
 <style>
     .footer{
         margin-top: 40px;
-        background-color: rgb(255, 255, 255);
-        border-top: 1px solid #e0e2e76b;
+        background-color:#484646;
     }
     .textSeparador{
         margin: 10px;
@@ -10,13 +9,12 @@
         text-align: center;
         font-size: 22px;
         font-weight: 600;
-        color: #585858;
+        color: #f3f3f3;
     }
     .contacto li{
         margin: 15px 0px;
-        font-weight: 700;
         list-style: none;
-        color: #e5313f;
+        color: #f3f3f3;
     }
     .contacto img{
         width: 25px;
@@ -44,15 +42,23 @@
         height: 65%;
     }
     .divBanner{
+        padding: 20px;
         display: flex;
         justify-content: center;
+        background-image: url(/img/logo-footer.png);
+        height: 230px;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat
     }
     .desarrollado{
         height: 30px;
-        background: #e4e4e4;
+        background: #616060;
         display: flex;
         justify-content: center;
         align-items: center;
+        color: #f3f3f3;
     }
 
 
@@ -91,13 +97,13 @@
             <div>
                 <ul>
                     <li>
-                        <img src="{{asset('/icons/ubicacion.png')}}" alt="">Direccion Numero Pais
+                        <img class="svgIcons" src="{{asset('/icons/posicion.png')}}" alt="">Direccion Numero Pais
                     </li>
                     <li>
-                        <img src="{{asset('/icons/email.png')}}" alt="">info@ilaef.org
+                        <img class="svgIcons" src="{{asset('/icons/correo.png')}}" alt="">info@ilaef.org
                     </li>
                     <li>
-                        <img src="{{asset('/icons/telefono.png')}}" alt="">0223 475-6492
+                        <img class="svgIcons"src="{{asset('/icons/llamada.png')}}" alt="">0223 475-6492
                     </li>
                 </ul>
             </div>
@@ -110,30 +116,26 @@
                 <div>
                     <ul>
                         <li>
-                            <a href=""><img src="{{asset('/icons/facebook.png')}}" alt="" srcset=""></a>
+                            <a href="https://www.facebook.com/ilaef"><img src="{{asset('/icons/facebook.png')}}" alt="" srcset=""></a>
                         </li>
                         <li>
-                            <a href=""><img src="{{asset('/icons/twitter.png')}}" alt="" srcset=""></a>
+                            <a href="https://twitter.com/ILAEF2"><img src="{{asset('/icons/twitter.png')}}" alt="" srcset=""></a>
                         </li>
                         <li>
-                            <a href=""><img src="{{asset('/icons/youtube.png')}}" alt="" srcset=""></a>
+                            <a href="https://www.youtube.com/feed/storefront?bp=ogUCKAQ%3D"><img src="{{asset('/icons/youtube.png')}}" alt="" srcset=""></a>
                         </li>
                         <li>
-                            <a href=""><img src="{{asset('/icons/linkedin.png')}}" alt="" srcset=""></a>
+                            <a href="https://www.linkedin.com/in/ilaef/"><img src="{{asset('/icons/linkedin.png')}}" alt="" srcset=""></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/ilaef_instlatamef/"><img src="{{asset('/icons/instagram.png')}}" style="background: white;" alt="" srcset=""></a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="banner col-sm-12 col-md-4">
-            <div class="textSeparador">
-                <p>
-                    ILAEF
-                </p><hr>
-            </div>
-            <div class="divBanner">
-                <img src="{{asset('/img/logo-ilaef.jpg')}}" alt="">
-            </div>
+            <div class="divBanner"></div>
         </div>
         <div class="desarrollado col-12">
             Desarrollado por Lorem ipsum dolor sit amet.

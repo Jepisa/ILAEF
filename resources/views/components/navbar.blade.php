@@ -146,7 +146,7 @@
                     <a href="/">Home</a>
                 </li>
                 <li>
-                    <a href="quienes-somos">Quienes Somos</a>
+                    <a href="/quienes-somos">Quienes Somos</a>
                 </li>
                 <li>
                     <a href="">Nuestra Mision</a>

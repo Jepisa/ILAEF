@@ -26,8 +26,9 @@
         
 
         @livewireStyles
-
         <!-- Scripts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+        <script src=" https://unpkg.com/aos@next/dist/aos.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.0/dist/alpine.js" defer></script>
     </head>
     <body class="font-sans antialiased">
@@ -44,5 +45,19 @@
         @stack('modals')
 
         @livewireScripts
+        <script>
+           AOS.init();
+        </script>
+        <script>
+    window.onload = function () {
+        Particles.init({
+            selector: '.conection',
+            connectParticles: true,
+            maxParticles: 120,
+            minDistance: 150,
+            color: '#e5313f',
+        });
+    };
+</script>
     </body>
 </html>

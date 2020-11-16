@@ -60,47 +60,48 @@
         <div>
             <p class="resaltar">Autoridades Junta Directiva</p>
         </div>
-        <div class="row">
-            <div class="foto col-11 col-md-5 col-lg-2">
-                <img src="{{asset('/img/autoridades/CHRISTENSEN.jpg')}}" alt="">
-                <p class="resaltar">Natalia Christensen. Presidente.</p>
+        <div class="row contFotos">
+            <div class="divFoto col-10 col-md-5 col-xl-2">
+                <div class="foto"  style="background-image: url(/img/autoridades/CHRISTENSEN.jpg);"></div>
+                <p class="resaltar">Natalia Christensen. Presidente ILAEF.</p>
             </div>
-            <div class="foto col-11 col-md-5 col-lg-2">
-                <img src="{{asset('/img/autoridades/diegobernal.jpg')}}" alt="">
+            <div class="divFoto col-10 col-md-5 col-xl-2">
+                <div class="foto"  style="background-image: url(/img/autoridades/diegobernal.jpg);"></div>
                 <p class="resaltar">Diego Bernal. Vicepresidente ILAEF.</p>
             </div>
-            <div class="foto col-11 col-md-5 col-lg-2">
-                <img src="{{asset('/img/autoridades/AndradeMarcelo.jpg')}}" alt="">
+            <div class="divFoto col-10 col-md-5 col-xl-2">
+                <div class="foto"  style="background-image: url(/img/autoridades/AndradeMarcelo.jpg);"></div>
                 <p class="resaltar">Marcelo Andrade. Secretario ILAEF.</p>
             </div>
-            <div class="foto col-11 col-md-5 col-lg-2">
-                <img src="{{asset('/img/autoridades/parras.jpg')}}" alt="">
+            <div class="divFoto col-10 col-md-5 col-xl-2">
+                <div class="foto"  style="background-image: url(/img/autoridades/parras.jpg);"></div>
                 <p class="resaltar">Sergio Parra. Tesorero ILAEF.</p>
             </div>
-            <div class="foto col-11 col-md-5 col-lg-2">
-                <img src="{{asset('/img/autoridades/MargaretAbbott.png')}}" alt="">
+            <div class="divFoto col-10 col-md-5 col-xl-2">
+                <div class="foto"  style="background-image: url(/img/autoridades/MargaretAbbott.png);"></div>
                 <p class="resaltar">Margaret Abbott. Consejera ILAEF.</p>
             </div>
-            <div class="foto col-11 col-md-5 col-lg-2">
-                <img src="{{asset('/img/autoridades/TONIO.jpg')}}" alt="">
+            <div class="divFoto col-10 col-md-5 col-xl-2">
+                <div class="foto"  style="background-image: url(/img/autoridades/TONIO.jpg);"></div>
                 <p class="resaltar">Antonio Diaz. Consejero ILAEF.</p>
             </div>
-            <div class="foto col-11 col-md-5 col-lg-2">
-                <img src="{{asset('/img/autoridades/HenryHernandez.jpg')}}" alt="">
+            <div class="divFoto col-10 col-md-5 col-xl-2">
+                <div class="foto"  style="background-image: url(/img/autoridades/HenryHernandez.jpg);"></div>
                 <p class="resaltar">Henry Hernandez. Consejero ILAEF.</p>
             </div>
-            <div class="foto col-11 col-md-5 col-lg-2">
-                <img src="{{asset('/img/autoridades/OMARNOGUERA.jpg')}}" alt="">
+            <div class="divFoto col-10 col-md-5 col-xl-2">
+                <div class="foto"  style="background-image: url(/img/autoridades/OMARNOGUERA.jpg);"></div>
                 <p class="resaltar">Omar Noguera. Consejero ILAEF.</p>
             </div>
-            <div class="foto col-11 col-md-5 col-lg-2">
-                <img src="{{asset('/img/autoridades/AliciaStivelberg 2019.jpg')}}" alt="">
+            <div class="divFoto col-10 col-md-5 col-xl-2">
+                <div class="foto"  style="background-image: url(/img/autoridades/AliciaStivelberg.jpg);"></div>
                 <p class="resaltar">Alicia Stivelberg. Consejero ILAEF.</p>
             </div>
-            <div class="foto col-11 col-md-5 col-lg-2">
-                <img src="{{asset('/img/autoridades/wISTON.jpg')}}" alt="">
+            <div class="divFoto col-10 col-md-5 col-xl-2">
+                <div class="foto"  style="background-image: url(/img/autoridades/wISTON.jpg);"></div>
                 <p class="resaltar">Wiston Uzcátegui: Consejero ILAEF.</p>
             </div>
+            
         </div>
     </div>
 </div>
@@ -108,68 +109,43 @@
 
 
 
-
-
-
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
-<script src=" https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  window.onload = function () {
-    Particles.init({
-      selector: '.conection',
-      connectParticles: true,
-      maxParticles: 110,
-      minDistance: 150,
-    });
-  };
-  AOS.init(); 
-</script>
-
-
-
-
-
-<!-- <div class="row">
-    <div class="foto col-11 col-md-5 col-lg-2">
-        <img src="{{asset('/img/autoridades/CHRISTENSEN.jpg')}}" alt="">
-        <p class="resaltar">Natalia Christensen. Presidente.</p>
-    </div>
-    <div class="foto col-11 col-md-5 col-lg-2">
-        <img src="{{asset('/img/autoridades/diegobernal.jpg')}}" alt="">
-        <p class="resaltar">Diego Bernal. Vicepresidente ILAEF.</p>
-    </div>
-    <div class="foto col-11 col-md-5 col-lg-2">
-        <img src="{{asset('/img/autoridades/AndradeMarcelo.jpg')}}" alt="">
-        <p class="resaltar">Marcelo Andrade. Secretario ILAEF.</p>
-    </div>
-    <div class="foto col-11 col-md-5 col-lg-2">
-        <img src="{{asset('/img/autoridades/parras.jpg')}}" alt="">
-        <p class="resaltar">Sergio Parra. Tesorero ILAEF.</p>
-    </div>
-    <div class="foto col-11 col-md-5 col-lg-2">
-        <img src="{{asset('/img/autoridades/MargaretAbbott.png')}}" alt="">
-        <p class="resaltar">Margaret Abbott. Consejera ILAEF.</p>
-    </div>
-    <div class="foto col-11 col-md-5 col-lg-2">
-        <img src="{{asset('/img/autoridades/TONIO.jpg')}}" alt="">
-        <p class="resaltar">Antonio Diaz. Consejero ILAEF.</p>
-    </div>
-    <div class="foto col-11 col-md-5 col-lg-2">
-        <img src="{{asset('/img/autoridades/HenryHernandez.jpg')}}" alt="">
-        <p class="resaltar">Henry Hernandez. Consejero ILAEF.</p>
-    </div>
-    <div class="foto col-11 col-md-5 col-lg-2">
-        <img src="{{asset('/img/autoridades/OMARNOGUERA.jpg')}}" alt="">
-        <p class="resaltar">Omar Noguera. Consejero ILAEF.</p>
-    </div>
-    <div class="foto col-11 col-md-5 col-lg-2">
-        <img src="{{asset('/img/autoridades/AliciaStivelberg 2019.jpg')}}" alt="">
-        <p class="resaltar">Alicia Stivelberg. Consejero ILAEF.</p>
-    </div>
-    <div class="foto col-11 col-md-5 col-lg-2">
-        <img src="{{asset('/img/autoridades/wISTON.jpg')}}" alt="">
-        <p class="resaltar">Wiston Uzcátegui: Consejero ILAEF.</p>
-    </div>
-</div> -->
+<!-- <div class="foto col-10 col-md-5 col-xl-2">
+                <img src="{{asset('/img/autoridades/CHRISTENSEN.jpg')}}" alt="">
+                <p class="resaltar">Natalia Christensen. Presidente.</p>
+            </div>
+            <div class="foto col-10 col-md-5 col-xl-2">
+                <img src="{{asset('/img/autoridades/diegobernal.jpg')}}" alt="">
+                <p class="resaltar">Diego Bernal. Vicepresidente ILAEF.</p>
+            </div>
+            <div class="foto col-10 col-md-5 col-xl-2">
+                <img src="{{asset('/img/autoridades/AndradeMarcelo.jpg')}}" alt="">
+                <p class="resaltar">Marcelo Andrade. Secretario ILAEF.</p>
+            </div>
+            <div class="foto col-10 col-md-5 col-xl-2">
+                <img src="{{asset('/img/autoridades/parras.jpg')}}" alt="">
+                <p class="resaltar">Sergio Parra. Tesorero ILAEF.</p>
+            </div>
+            <div class="foto col-10 col-md-5 col-xl-2">
+                <img src="{{asset('/img/autoridades/MargaretAbbott.png')}}" alt="">
+                <p class="resaltar">Margaret Abbott. Consejera ILAEF.</p>
+            </div>
+            <div class="foto col-10 col-md-5 col-xl-2">
+                <img src="{{asset('/img/autoridades/TONIO.jpg')}}" alt="">
+                <p class="resaltar">Antonio Diaz. Consejero ILAEF.</p>
+            </div>
+            <div class="foto col-10 col-md-5 col-xl-2">
+                <img src="{{asset('/img/autoridades/HenryHernandez.jpg')}}" alt="">
+                <p class="resaltar">Henry Hernandez. Consejero ILAEF.</p>
+            </div>
+            <div class="foto col-10 col-md-5 col-xl-2">
+                <img src="{{asset('/img/autoridades/OMARNOGUERA.jpg')}}" alt="">
+                <p class="resaltar">Omar Noguera. Consejero ILAEF.</p>
+            </div>
+            <div class="foto col-10 col-md-5 col-xl-2">
+                <img src="{{asset('/img/autoridades/AliciaStivelberg 2019.jpg')}}" alt="">
+                <p class="resaltar">Alicia Stivelberg. Consejero ILAEF.</p>
+            </div>
+            <div class="foto col-10 col-md-5 col-xl-2">
+                <img src="{{asset('/img/autoridades/wISTON.jpg')}}" alt="">
+                <p class="resaltar">Wiston Uzcátegui: Consejero ILAEF.</p>
+            </div> -->

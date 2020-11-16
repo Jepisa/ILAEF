@@ -1,14 +1,90 @@
+.divCards{
+    margin-top: 50px;
+}
+.cardNew{
+    width: 100%;
+    max-height: 490px;
+    margin: 10px 10px 40px 10px;
+    border-radius: 4px;
+    box-shadow: 0px 15px 25px -4px rgba(30, 30, 60, 0.19);
+}
+.imgNew{
+    height: 250px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.imgNew img{
+    height: 100%;
+    width: 100%;
+    border-radius: 4px 4px 0px 0px;
+}
+.tagPais{
+    position: absolute;
+    bottom: -10;
+    padding: 3px;
+    min-width: 100px;
+    height: 30px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #e5313f;
+    color: white;
+}
+.body{
+    width: 100%;
+    height: 240px;
+    background-color: white;
+}
+.title{
+    width: 100%;
+    height: 60px;
+    padding: 20px 10px 5px 10px;
+    border-bottom: 1px solid rgb(226, 226, 226);
+}
+.title p{
+    font-size: 17px;
+    font-weight: 700;
+    color: #383838;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.description{
+    padding: 10px;
+    height: 140px;
+    overflow: auto;
+    text-overflow: ellipsis;
+}
+.description p{
+    margin: 0;
+}
+.reloj{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+.reloj p{
+    margin: 0;
+    padding: 0;
+    color: #586aa6;
+}
+.reloj img{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
 .conection {
     display: none;
 }
 @media (min-width: 768px) {
     .conection {
-        position: absolute;
         display: block;
+        position: fixed;
         top: 0;
         left: 0;
         z-index: -9;
-      /* height: 80% !important;
-      border: 1px solid rgb(126, 126, 126); */
+        height: 90% !important;
     }
 }

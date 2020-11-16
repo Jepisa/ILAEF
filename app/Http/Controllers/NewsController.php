@@ -45,7 +45,9 @@ class NewsController extends Controller
     public function show(News $id)
     {
 
-        return view('news.show', compact('id'));
+        $newId = News::find($id);
+        $new = $newId[0];
+        return view('showNew', compact('id', 'new'));
     }
 
     public function edit( News $id)

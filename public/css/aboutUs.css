@@ -1,6 +1,3 @@
-.conection {
-    display: none;
-}
 .aboutUsContent{
     background-color: white;
     border-radius: 10px;
@@ -39,18 +36,37 @@
     list-style: none;
     padding: 0;
 }
-.foto{
-    height: 250px;
-    margin: 10px 20px 50px 20px;
+.contFotos{
+    justify-content: center;
 }
-.foto img{
-    height: 100%;
-    width: 100%;
-    margin-bottom: 10px;
+.divFoto{
+    margin: 0px 10px;
+}
+.foto{
+    height: 230px;
+    background-position: center;
+    background-size: cover;
+    margin: 0px 10px;
 }
 .autoridades{
     padding: 20px;
 }
+.conection {
+    display: none;
+}
+@media (min-width: 768px) {
+    .conection {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -9;
+        height: 90% !important;
+    }
+}
+
+
+
 @media (min-width: 1024px){
     .logosAsoc{
         display: block;
@@ -69,14 +85,5 @@
     .about p{
         font-size: 18px;
         font-weight: 600;
-    }
-}
-@media (min-width: 768px) {
-    .conection {
-      position: absolute;
-      display: block;
-      top: 0;
-      left: 0;
-      z-index: -9;
     }
 }
