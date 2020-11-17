@@ -8,28 +8,30 @@
       @foreach($news as $new)
        <!-- CARD -->
        <div class="col-12 col-md-6 col-lg-4" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="50">
-        <div class="cardNew">
-          <div class="imgNew">
-            <div class="tagPais">Argentina</div>
-            <img src="{{$new->image}}" alt="">
+        <a href="{{$new->url}}" id="url">
+          <div class="cardNew">
+            <div class="imgNew">
+              <div class="tagPais"></div>
+              <img src="{{$new->image}}" alt="">
+            </div>
+            <div class="body">
+              <div class="title">
+                <p>
+                  {{$new->title}}
+                </p>
+              </div>
+              <div class="description">
+                <p>
+                  {{$new->description}}
+                </p>
+              </div>
+              <div class="reloj">
+                  <img src='/icons/reloj.png' alt="" srcset="">
+                  <p>{{$new->created_at->format('d/m/Y')}}</p>
+              </div>
+            </div>
           </div>
-          <div class="body">
-            <div class="title">
-              <p>
-                {{$new->title}}
-              </p>
-            </div>
-            <div class="description">
-              <p>
-                {{$new->description}}
-              </p>
-            </div>
-            <div class="reloj">
-                <img src='/icons/reloj.png' alt="" srcset="">
-                <p>{{$new->created_at->format('d/m/Y')}}</p>
-            </div>
-          </div>
-        </div>
+        </a>
       </div>
       @endforeach
     </div>

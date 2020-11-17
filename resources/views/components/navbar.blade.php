@@ -82,7 +82,7 @@
             display: flex;
         
         }
-
+        
         .collapse ul{
             display: flex;
             font-size: 18px;
@@ -116,6 +116,18 @@
         }
         .collapse li:active a{
             color: white;
+        }
+        #menuAdmin{
+            background: #003485;
+        }
+        #menuAdmin a{
+            color: white;
+        }
+        #menuAdmin a:active{
+            color:  #003485;
+        }
+        #menuAdmin:active{
+            background:white;
         }
 
     }
@@ -154,6 +166,11 @@
                 <li>
                     <a href="">Agenda</a>
                 </li>
+                @auth
+                <li id="menuAdmin">
+                    <a href="/admin">Admin</a>
+                </li>
+                @endauth
             </ul>
         </div>
     </div>

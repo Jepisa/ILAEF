@@ -1,6 +1,9 @@
 .divCards{
     margin-top: 50px;
 }
+#url{
+    text-decoration: none;
+}
 .cardNew{
     width: 100%;
     max-height: 490px;
@@ -58,6 +61,7 @@
 }
 .description p{
     margin: 0;
+    color: #383838;
 }
 .reloj{
     height: 40px;

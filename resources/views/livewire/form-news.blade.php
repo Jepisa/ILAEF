@@ -12,7 +12,8 @@
             margin-top: 50px;
         }
 
-        .formAdmin h2 {
+        .formAdmin h3 {
+            color: #484646;
             text-align: center;
         }
 
@@ -45,6 +46,18 @@
         .formAdmin textarea{
             width: 100%;
             height: 200px;
+            outline: none;
+            border: 1px solid #c4c4c4;
+            padding: 20px;
+        }
+        .formAdmin select{
+            height: 50px;
+            width: 30%;
+            border-radius: 5px;
+            outline: none;
+            border: 1px solid #c4c4c4;
+            margin-bottom: 20px;
+            padding-left: 20px;
         }
         .formAdmin button {
             height: 50px;
@@ -67,10 +80,11 @@
             background: #012a6d;
         }
     </style>
-    <!-- <script src="https://cdn.ckeditor.com/ckeditor5/18.0.0/classic/ckeditor.js"></script> -->
-    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
     <div class="container">
         <div class="formAdmin">
+            <h3>
+                Redacta una nueva noticia
+            </h3>
             <div>
                 <label for="">Titulo</label>
                 <input wire:model="title" type="text" name="" id="">
@@ -82,6 +96,15 @@
             <div>
                 <label for="">Descripcion</label>
                 <textarea wire:model="description"></textarea>
+            </div>
+            <div>
+                <label for="">Entidad</label>
+                <select name="" id="" wire:model="entity_id">
+                    <option value="">Entidad</option>
+                    @foreach($entities as $entity)
+                       <option value="{{$entity->id}}">{{$entity->name}}</option>
+                    @endforeach
+                </select>
             </div>
             <div>
                 <label for="">Selecciona una imagen</label>

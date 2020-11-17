@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\News;
+use App\Models\Entity;
 
 class HomeController extends Controller
 {
@@ -10,9 +11,10 @@ class HomeController extends Controller
     {
 
         $untilLastEightNews = News::untilLastEightNews();
-
+        
         if ( $untilLastEightNews->count() >= 1 ){
-            return view('home', ['news' => $untilLastEightNews]);
+            return view('home', 
+            ['news' => $untilLastEightNews]);
         } else {
             return view('home');
         }
