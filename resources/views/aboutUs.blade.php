@@ -39,19 +39,19 @@
         <div class="logosAsoc col-lg-3">
             <ul>
                 <li>
-                    <img src="{{asset('/img/logo0.png')}}" alt="" srcset="">
+                    <a href="https://www.iadef.org"><img src="{{asset('/img/logo0.png')}}" alt="" srcset=""></a>
                 </li>
                 <li>
-                    <img src="{{asset('/img/logo1.jpg')}}" alt="" srcset="">
+                    <a href="/"><img src="{{asset('/img/logo1.jpg')}}" alt="" srcset=""></a>
                 </li>
                 <li>
-                    <img src="{{asset('/img/logo2.png')}}" alt="" srcset="">
+                    <a href="http://www.cefe.usap.edu"><img src="{{asset('/img/logo2.png')}}" alt="" srcset=""></a>
                 </li>
                 <li>
-                    <img src="{{asset('/img/logo3.png')}}" alt="" srcset="">
+                    <a href="http://www.ipef.org.py"><img src="{{asset('/img/logo3.png')}}" alt="" srcset=""></a>
                 </li>
                 <li>
-                    <img src="{{asset('/img/logo4.png')}}" alt="" srcset="">
+                    <a href="https://www.icoef.com.co"><img src="{{asset('/img/logo4.png')}}" alt="" srcset=""></a>
                 </li>
             </ul>
         </div>

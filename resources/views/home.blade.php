@@ -1,5 +1,21 @@
-<link rel="stylesheet" href="/css/home.css">
+<link rel="stylesheet" href="{{ asset('/css/home.css') }}">
 <x-app-layout>
+  <style>
+    .conection {
+        display: none;
+    }
+    @media (min-width: 768px) {
+        .conection {
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -9;
+            height: 90% !important;
+        }
+    }
+    
+</style>
   <canvas class="conection"></canvas>
   <x-carrousel />
   <x-globos />

@@ -138,7 +138,7 @@
             <div class="divBanner"></div>
         </div>
         <div class="desarrollado col-12">
-            <p class="mb-0">Desarrollado por Lorem ipsum dolor sit amet.</p>
+            <p class="mb-0">Desarrollado por voluntarios de Digital House</p>
         </div>
     </div>
 </div>
