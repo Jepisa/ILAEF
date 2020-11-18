@@ -144,7 +144,7 @@
     <div class="navbar" id="navbar">
         <div class="logos">
             <div class="logoNavBar">
-                <a href="/">
+                <a href="{{ route('home') }}">
                     <img src="{{asset('/img/logo.png')}}" alt="">
                 </a>
             </div>
@@ -155,17 +155,17 @@
         <div class="collapse" id="collapse">
             <ul>
                 <li>
-                    <a href="/">Home</a>
+                    <a href="{{ route('home') }}">{{ __('Home') }}</a>
                 </li>
                 <li>
-                    <a href="/quienes-somos">Quienes Somos</a>
+                    <a href="{{ route('aboutUs') }}">{{ __('Quienes Somos') }}</a>
                 </li>
                 <li>
-                    <a href="">Nuestra Mision</a>
+                    <a href="{{ route('ourMission') }}">{{ __('Nuestra Mision') }}</a>
                 </li>
-                <li>
-                    <a href="">Agenda</a>
-                </li>
+                {{-- <li>
+                    <a href="{{ route('activities.index') }}">{{ __('Actividades') }}</a>
+                </li> --}}
                 @auth
                 <li id="menuAdmin">
                     <a href="/admin">Admin</a>
