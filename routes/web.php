@@ -9,8 +9,8 @@ use Illuminate\Support\Facades\Artisan;
 Route::get('/', HomeController::class)->name('home');
 
 //Static views
-Route::view('quienes-somos', 'aboutUs')->name('quienes-somos');
-Route::view('nuestra-mision', 'ourMission')->name('nuestra-mision');
+Route::view('quienes-somos', 'aboutUs')->name('aboutUs');
+Route::view('nuestra-mision', 'ourMission')->name('ourMission');
 
 //News
 Route::get('/noticias/crear', [NewsController::class, 'create'] )->name('news.create');
@@ -21,7 +21,7 @@ Route::put('/noticias/editar', [NewsController::class, 'update'] )->name('news.u
 
 
 //Activities
-Route::get('/actividades', [ActivityController::class, 'index'] )->name('activities.index');
+// Route::get('/actividades', [ActivityController::class, 'index'] )->name('activities.index');
 Route::get('/actividades/crear', [ActivityController::class, 'create'] )->name('activities.create');
 Route::post('/actividades', [ActivityController::class, 'store'] )->name('activities.store');
 Route::get('/actividades/{activity}', [ActivityController::class, 'show'] )->name('activities.show');
