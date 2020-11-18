@@ -1,6 +1,5 @@
 require('./bootstrap');
 
-
 /* nav mobile intento fallido */
 addEventListener('DOMContentLoaded', () =>{
     const menu_mobile = document.querySelector('menu_mobile')
