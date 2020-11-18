@@ -77,13 +77,13 @@
     </div>
     <div class="divPaises row">
         <div class="divPais col-3 col-lg-1" data-aos="zoom-in"data-aos-duration="1000"data-aos-delay="150">
-            <a href=""><p>Argentina</p></a>
+            <a href="https://www.iadef.org"><p>Argentina</p></a>
         </div>
         <div class="divPais col-3 col-lg-1" data-aos="zoom-in"data-aos-duration="1000"data-aos-delay="400">
-            <a href=""><p>Colombia</p></a>
+            <a href="https://www.icoef.com.co"><p>Colombia</p></a>
         </div>
         <div class="divPais col-3 col-lg-1" data-aos="zoom-in"data-aos-duration="1000"data-aos-delay="150">
-            <a href=""><p>Ecuador</p></a>
+            <a href="https://"><p>Ecuador</p></a>
         </div>
         <div class="divPais col-3 col-lg-1" data-aos="zoom-in"data-aos-duration="1000"data-aos-delay="180">
             <a href=""><p>EE.UU</p></a>
@@ -92,7 +92,7 @@
             <a href=""><p>El Salvador</p></a>
         </div>
         <div class="divPais col-3 col-lg-1" data-aos="zoom-in"data-aos-duration="1000"data-aos-delay="350">
-            <a href=""><p>Honduras</p></a>
+            <a href="http://www.cefe.usap.edu"><p>Honduras</p></a>
         </div>
         <div class="divPais col-3 col-lg-1" data-aos="zoom-in"data-aos-duration="1000"data-aos-delay="100">
             <a href=""><p>México</p></a>
@@ -101,7 +101,7 @@
             <a href=""><p>Panamá</p></a>
         </div>
         <div class="divPais col-3 col-lg-1" data-aos="zoom-in"data-aos-duration="1000"data-aos-delay="250">
-           <a href=""><p>Paraguay</p></a>
+           <a href="http://www.ipef.org.py"><p>Paraguay</p></a>
         </div>
     </div>
 </div>

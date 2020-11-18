@@ -97,13 +97,13 @@
             <div>
                 <ul>
                     <li>
-                        <img class="svgIcons" src="{{asset('/icons/posicion.png')}}" alt="">Direccion Numero Pais
+                        <img class="svgIcons" src="{{asset('/icons/posicion.png')}}" alt="">201 Ahambra Circle Suite 1205 Coral Gables, FL33134
                     </li>
                     <li>
                         <img class="svgIcons" src="{{asset('/icons/correo.png')}}" alt="">info@ilaef.org
                     </li>
                     <li>
-                        <img class="svgIcons"src="{{asset('/icons/llamada.png')}}" alt="">0223 475-6492
+                        <img class="svgIcons"src="{{asset('/icons/llamada.png')}}" alt="">+54 9 11 5745-0859
                     </li>
                 </ul>
             </div>
@@ -138,7 +138,7 @@
             <div class="divBanner"></div>
         </div>
         <div class="desarrollado col-12">
-            <p class="mb-0">Desarrollado por Lorem ipsum dolor sit amet.</p>
+            <p class="mb-0">Desarrollado por voluntarios de Digital House</p>
         </div>
     </div>
 </div>
