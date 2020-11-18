@@ -53,7 +53,7 @@
         background-repeat: no-repeat
     }
     .desarrollado{
-        height: 30px;
+        min-height: 30px;
         background: #616060;
         display: flex;
         justify-content: center;
@@ -87,7 +87,7 @@
 
 
 <div class="">
-    <div class="footer row">
+    <div class="footer row col-12 ml-0">
         <div class="contacto col-sm-12 col-md-4">
             <div class="textSeparador">
                 <p>
@@ -138,7 +138,7 @@
             <div class="divBanner"></div>
         </div>
         <div class="desarrollado col-12">
-            Desarrollado por Lorem ipsum dolor sit amet.
+            <p class="mb-0">Desarrollado por Lorem ipsum dolor sit amet.</p>
         </div>
     </div>
 </div>
