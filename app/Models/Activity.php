@@ -9,11 +9,11 @@ class Activity extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['title', 'slug', 'body','image'];
+    protected $fillable = ['title', 'slug', 'body','image', 'state_id', 'subtitle'];
 
     public function categories()
     {
-        return $this->belongsToMany('App\Models\Entity');
+        return $this->belongsToMany('App\Models\Category');
     }
 
     public function tags()
