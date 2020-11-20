@@ -28,7 +28,7 @@ class NewsFactory extends Factory
             'image' => $imageUrl, // 'image' => $this->faker->imageUrl($width = 640, $height = 480),
             // 'remember_token' => Str::random(10),
             'description' => $this->faker->text($maxNbChars = 100),
-            'country_id' => 1,
+            'entity_id' => 1,
             'url' => $imageUrl,
             'created_at' => $this->faker->dateTime($max = 'now', $timezone = null),
         ];
