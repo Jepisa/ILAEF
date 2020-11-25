@@ -1,3 +1,3 @@
 <x-app-layout>
-   @livewire('form-news')
+   @livewire('admin-news')
 </x-app-layout>
