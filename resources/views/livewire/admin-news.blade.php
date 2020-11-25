@@ -8,4 +8,4 @@
             @include('livewire.table')
         </div>
     </div>
-</div>
+</div> 

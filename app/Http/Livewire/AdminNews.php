@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Storage;
 
 
 class AdminNews extends Component
-{
+{ 
     
     
     use WithFileUploads;

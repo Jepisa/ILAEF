@@ -18,7 +18,7 @@
             <label for="">Descripcion</label>
             <textarea wire:model="description"></textarea>
         </div>
-        <div>
+        <div> 
             <label for="">Entidad</label>
             <select name="" id="" wire:model="entity_id">
                 <option value="">Entidad</option>
