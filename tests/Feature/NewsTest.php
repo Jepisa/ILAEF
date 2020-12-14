@@ -174,7 +174,6 @@ class NewsTest extends TestCase
     {
         $entity = Entity::factory()->create([ 'name' => 'Argentina' ]);
         $file = $this->fakeImage();
-        $state = State::create([ 'name' => 'visible' ]);
 
         return $newNews = [
             'title' => 'My first news',

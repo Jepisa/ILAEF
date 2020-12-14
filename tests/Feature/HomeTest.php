@@ -28,7 +28,7 @@ class HomeTest extends TestCase
 
         $response = $this->get('/');
 
-        $response->assertViewIs('welcome');
+        $response->assertViewIs('home');
     }
 
     /** @test*/
