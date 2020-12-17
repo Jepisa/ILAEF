@@ -89,8 +89,8 @@
         left: 0;
         z-index: -9;
         height: 90% !important;
+    }
 }
-
 
 @media screen and (max-width:700px){
 
@@ -156,85 +156,4 @@
 }
 
 
-/* agrego aca lo del navbar que estaba en la pagina de prueba - Franco */
 
-/* .nav-index{
-    display: flex;
-    flex-direction: column; 
-}
-    .nav-background{
-        background: url('../img/IMAGEN\ 2.jpg');
-        height: 203px;  
-    }
-    .div-logo{
-        width: min-content;    
-    }
-        .logo-ILAEF {
-         
-            min-width: 224px;
-            max-width:284px;
-            max-height:100px;
-            border-radius: 7px;
-            border: 1.7px solid #635e5e61;   
-        }  
-
-    .header-desktop{
-        display: flex;
-        justify-content: center;
-        position: relative;
-        z-index: 10;
-        margin-top: 30px;
-        align-items: flex-start;
-    }
-
-    .div-enlaces{
-        justify-self: flex-end;
-        display: flex;
-        justify-content: flex-end;
-        position: relative;
-        z-index: 10;
-        margin-top: 30px;
-    }  
-        .div-enlaces a{
-
-            text-align: center;
-            font-weight: bold;
-            letter-spacing: -0.5px;
-            font-size: 12px;
-            color: #817f7f;
-            text-decoration: none;
-            border: 1.7px solid #635e5e61;
-            border-radius: 7px;
-            padding: 10px 5px;
-            background-color: white;
-
-            margin: 0 3px;
-            min-width: 11vw;
-            max-height: 100px;
-
-        }
-        .a-home{
-            min-width: 60px !important; 
-            width: 15px; 
-            padding: 0 9px !important ;
-            display: flex; 
-            justify-content: center; 
-            align-items: center;
-        }   
-
-.header-mobile{
-    display: none;
-} */
-
-
-/* div superior y navbar */
-/* #div-fondo-superior{
-    background-image: url('../img/circulos.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    max-height: 490px;
-    margin: 10px 10px 40px 10px;
-    border-radius: 4px;
-    box-shadow: 0px 15px 25px -4px rgba(30, 30, 60, 0.19);
-} */
