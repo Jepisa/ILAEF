@@ -264,7 +264,7 @@
                     <a href="{{ route('aboutUs') }}">{{ __('home.navbar.aboutUs') }}</a>
                 </li>
                 <li>
-                    <a href="{{ route('ourMission') }}">{{ __('home.navbar.ourPhilosophy') }}</a>
+                    <a href="{{ route('ourPhilosophy') }}">{{ __('home.navbar.ourPhilosophy') }}</a>
                 </li>
                 {{-- <li>
                     <a href="{{ route('activities.index') }}">{{ __('Actividades') }}</a>
