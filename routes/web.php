@@ -10,7 +10,7 @@ Route::get('/', HomeController::class)->name('home');
 
 //Static views
 Route::view('quienes-somos', 'aboutUs')->name('aboutUs');
-Route::view('nuestra-mision', 'ourMission')->name('ourMission');
+Route::view('nuestra-filosofia', 'ourPhilosophy')->name('ourPhilosophy');
 
 //News
 Route::get('/noticias/crear', [NewsController::class, 'create'] )->name('news.create');
