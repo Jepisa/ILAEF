@@ -258,13 +258,13 @@
         <div class="collapse" id="collapse">
             <ul>
                 <li>
-                    <a href="{{ route('home') }}">{{ __('Home') }}</a>
+                    <a href="{{ route('home') }}">{{ __('home.navbar.home') }}</a>
                 </li>
                 <li>
-                    <a href="{{ route('aboutUs') }}">{{ __('Quienes Somos') }}</a>
+                    <a href="{{ route('aboutUs') }}">{{ __('home.navbar.aboutUs') }}</a>
                 </li>
                 <li>
-                    <a href="{{ route('ourMission') }}">{{ __('Nuestra Mision') }}</a>
+                    <a href="{{ route('ourMission') }}">{{ __('home.navbar.ourPhilosophy') }}</a>
                 </li>
                 {{-- <li>
                     <a href="{{ route('activities.index') }}">{{ __('Actividades') }}</a>
