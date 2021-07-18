@@ -19,13 +19,13 @@ class StaticViewsTest extends TestCase
     }
 
     /** @test */
-    public function the_route_nuestra_mision_is_ok_and_redirects_to_view_ourMission()
+    public function the_route_nuestra_filosofia_is_ok_and_redirects_to_view_ourPhilosophy()
     {
         $this->withoutExceptionHandling();
 
-        $response = $this->get('/nuestra-mision');
+        $response = $this->get('/nuestra-filosofia');
         $response->assertStatus(200);
-        $response->assertViewIs('ourMission');
+        $response->assertViewIs('ourPhilosophy');
     }
 
 }
