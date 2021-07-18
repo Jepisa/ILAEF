@@ -1,10 +1,12 @@
 <?php
 
+use App\Actions\Fortify\CreateNewUser;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ActivityController;
 use App\Http\Controllers\NewsController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Artisan;
+use Laravel\Fortify\Http\Controllers\RegisteredUserController;
 
 Route::get('/', HomeController::class)->name('home');
 
@@ -31,9 +33,14 @@ Route::put('/actividades/{activities}', [ActivityController::class, 'update'] )-
 
 
 //Admin
-Route::view('/admin' , 'admin');
+Route::view('/admin' , 'admin')->middleware(['auth','admin']);
+Route::get('/register', [RegisteredUserController::class, 'create'])
+        ->middleware(['auth', 'admin'])
+        ->name('register');
 
-
+Route::post('/register', [CreateNewUser::class, 'create'])
+        ->middleware(['auth', 'admin'])
+        ->name('register');
 
 
 // Delete the routes test
