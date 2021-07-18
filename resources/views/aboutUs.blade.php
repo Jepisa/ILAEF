@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-12 col-lg-9">
                 <div class="tagAboutUs">
-                    Quienes somos
+                    {{ __('home.navbar.aboutUs') }}
                 </div>
                 <div class="about">
                     <p>
@@ -36,7 +36,7 @@
                             <p>“Centro de Empresa Familiar y Emprendedores” Capítulo Honduras</p>
                         </li>
                         <li>
-                            <p class="resaltar">CONIEF</p>
+                            <p class="resaltar">CIBAEF</p>
                             <p>“Consejo Iberoamericano de la Empresa Familiar, A.C.” Capítulo México</p>
                         </li>
                         <li>
@@ -62,6 +62,9 @@
                     <li>
                         <a href="https://www.icoef.com.co"><img src="{{asset('/img/logo4.png')}}" alt="" srcset=""></a>
                     </li>
+                    {{-- <li>
+                        <a ><img src="{{asset('/img/logo-CIBAEF.jpeg')}}" alt="" srcset=""></a>
+                    </li> --}}
                 </ul>
             </div>
         </div><hr>

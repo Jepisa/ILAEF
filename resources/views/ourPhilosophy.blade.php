@@ -44,7 +44,7 @@
     </Style>
 
         <div class="tagAboutUs">
-            Nuestra Misión
+            {{ __('home.navbar.ourPhilosophy') }}
         </div>
         <div class="px-4 pb-2 md:px-6 md:pb-6" style="text-align: justify">
             <h3 class="text-center md:text-left"><strong>VISIÓN</strong></h3>
