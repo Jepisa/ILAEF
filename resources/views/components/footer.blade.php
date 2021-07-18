@@ -138,7 +138,12 @@
             <div class="divBanner"></div>
         </div>
         <div class="desarrollado col-12">
-            <p class="mb-0">Desarrollado por voluntarios de Digital House</p>
+            <p class="mb-0">Desarrollado por voluntarios de Digital House 
+                <a href="https://valeriarechdigitalizada.com" target="_blank" class="text-reset text-white">Valeria Rech</a> -
+                <a href="https://github.com/Jepisa" target="_blank" class="text-reset">Jean Piere Sanchez.</a> -
+                <a href="https://github.com/andriwconde" target="_blank" class="text-reset">Adrian Conde</a> -
+                <a href="https://github.com/Leonel-bot" target="_blank" class="text-reset">Leonel Martinez</a> -
+            </p>
         </div>
     </div>
 </div>
