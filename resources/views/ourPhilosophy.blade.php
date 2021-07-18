@@ -46,10 +46,10 @@
         <div class="tagAboutUs">
             Nuestra Misión
         </div>
-        <div class="px-2 pb-2 md:px-6 md:pb-6">
+        <div class="px-4 pb-2 md:px-6 md:pb-6" style="text-align: justify">
             <h3 class="text-center md:text-left"><strong>VISIÓN</strong></h3>
             <p class="mb-2">
-                Ser reconocida como la ONG DE LA REGIÓN LATAM referente por el conocimiento y defensa de la Empresa Familiar y sus Consultores. Ser un agente promotor y facilitador de Políticas Públicas para la Empresa Familiar Latinoamérica.
+                Ser reconocida como la ONG DE LA REGIÓN LATAM referente por el conocimiento y defensa de la Empresa Familiar y sus Consultores. Ser un agente promotor y facilitador de Políticas Públicas para la Empresa Familiar Latinoamericana.
             </p>
 
             <h3 class="text-center md:text-left"><strong>MISIÓN</strong></h3>
@@ -89,7 +89,7 @@
                             Latinoamérica,</span> con objetivos similares a los de los socios institucionales del ILAEF,
                             realizando actividades previas de concientización y preparación y, una vez creados,
                             brindándoles la capacitación y el apoyo que pudieran necesitar para el comienzo y
-                            mantenimiento de sus actividades. A los fines de realizar actividades locales y
+                            mantenimiento de sus actividades. A fin de realizar actividades locales y
                             promover la creación de institutos de empresa familiar en cada país, podrá crear
                             capítulos en los diversos países, integradas por personalidades locales y consejeros
                             delegados del ILAEF y/o suscribir convenios con entidades locales calificadas para la
@@ -108,9 +108,9 @@
                         </li>
                         <li>
                             <p>
-                            <span>Crear un centro de investigaciones sobre empresas familiares latinas que permita</span>
+                            <span>Crear un centro de investigaciones sobre empresas familiares latinoamericanas que permita</span>
                             establecer contactos entre todos los investigadores, intercambiar experiencias y
-                            apoyos, recibir estudios, estadísticas, trabajos y evaluaciones y publicar sus resultados
+                            apoyos, recibir estudios, estadísticas, trabajos y evaluaciones, además de, publicar sus resultados
                             en la web.
                             </p>
                         </li>
@@ -118,7 +118,7 @@
                             <p>
                             <span>Convocar y organizar cada tres años un Congreso Latinoamericano de Empresas
                             Familiares,</span> reuniendo a los institutos, investigadores, profesores, consultores,
-                            profesionales y familias empresarias de la región a efectos de intercambiar
+                            profesionales y familias empresarias de la región, a efectos de intercambiar
                             experiencias, ideas y proyectos.
                             </p>
                         </li>
